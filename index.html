@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Age calculator app</title>
+
+</head>
+<body>
+
+<main>
+  <div class="content">
+    <form class="date-input-form" id="fdate">
+
+      <div>
+        <label for="fday">DAY</label><br>
+        <input type="number" id="fday" name="fday" placeholder="DD" class="fdate-in">
+        <p class="error-message" id="day-error">Must be a valid day</p>
+      </div>
+      <div>
+        <label for="fmonth">MONTH</label><br>
+        <input type="number" id="fmonth" name="fmonth" placeholder="MM" class="fdate-in">
+        <p class="error-message" style="width: 150px" id="month-error">Must be a valid month</p>
+
+      </div>
+      <div>
+        <label for="fyear">YEAR</label><br>
+        <input type="number" id="fyear" name="fyear" placeholder="YYYY" class="fdate-in">
+        <p class="error-message" id="year-error">Must be in the past</p>
+
+      </div>
+      <hr class="line">
+      <input type="image" class="submit-btn" src="assets/images/icon-arrow.svg">
+
+
+    </form>
+    <div class="btm-sec">
+      <em><div class="showcase"><span id="digit-Y" class="digit">- -</span> years</div></em>
+      <em><div class="showcase"><span id="digit-M" class="digit">- -</span> months</div></em>
+      <em><div class="showcase"><span id="digit-D" class="digit">- -</span> days</div></em>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
